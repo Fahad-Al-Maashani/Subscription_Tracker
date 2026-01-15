@@ -1,0 +1,167 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# macOS
+.DS_Store
+*.pem
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ========================================
+# SENSITIVE INFORMATION - NEVER COMMIT!
+# ========================================
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+!.env.template
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API keys and credentials
+**/secrets.json
+**/secrets.js
+**/secrets.ts
+config/secrets.*
+src/config/secrets.*
+api-keys.*
+credentials.*
+auth-config.*
+
+# Firebase & Google Services
+google-services.json
+GoogleService-Info.plist
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# AWS
+.aws/
+*.pem
+*.cer
+*.crt
+awsconfiguration.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+database.json
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+*.temp
+*~.nib
+*.swp
+*.swo
+*.swn
+
+# Private keys & certificates
+*.p12
+*.pfx
+*.key
+*.pem
+*.cer
+*.crt
+*.der
+*.p7b
+*.p7r
+*.spc
+id_rsa
+id_rsa.pub
+*.ppk
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE specific files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.iml
+*.swp
+*.swo
+
+# User-specific data (if storing locally)
+user-data/
+userdata/
+subscriptions-backup.*
+
+# Sensitive documentation
+CREDENTIALS.md
+SECRETS.md
+private-notes.txt
