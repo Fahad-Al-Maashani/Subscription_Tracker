@@ -61,7 +61,129 @@ Before running this app, make sure you have the following installed:
 
 ---
 
-## 🚀 Installation & Setup
+## � Complete Installation Guide
+
+This section will walk you through setting up your development environment and installing the mobile app.
+
+### **Step 1: Install Node.js & npm**
+
+Node.js is required to run the Expo development server and manage dependencies.
+
+#### **Windows**
+1. Visit [nodejs.org](https://nodejs.org/)
+2. Download the **LTS (Long Term Support)** version for Windows
+3. Run the installer (`node-vXX.X.X-x64.msi`)
+4. Follow the installation wizard (keep default settings)
+5. Verify installation:
+   ```powershell
+   node --version
+   npm --version
+   ```
+
+#### **macOS**
+**Option 1: Using Official Installer**
+1. Visit [nodejs.org](https://nodejs.org/)
+2. Download the **LTS** version for macOS
+3. Run the `.pkg` installer
+4. Follow the installation wizard
+5. Verify installation:
+   ```bash
+   node --version
+   npm --version
+   ```
+
+**Option 2: Using Homebrew (Recommended)**
+```bash
+# Install Homebrew first if you don't have it
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install Node.js
+brew install node
+
+# Verify installation
+node --version
+npm --version
+```
+
+#### **Linux (Ubuntu/Debian)**
+```bash
+# Update package index
+sudo apt update
+
+# Install Node.js and npm
+sudo apt install nodejs npm
+
+# Verify installation
+node --version
+npm --version
+
+# If version is too old, use NodeSource repository for latest LTS:
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+#### **Linux (Fedora/RHEL/CentOS)**
+```bash
+# Install Node.js and npm
+sudo dnf install nodejs npm
+
+# Verify installation
+node --version
+npm --version
+```
+
+---
+
+### **Step 2: Install Expo Go on Your Mobile Device**
+
+Expo Go is a free app that lets you run React Native projects on your phone without building the app.
+
+#### **📱 For iOS (iPhone/iPad)**
+
+1. **Open the App Store** on your iOS device
+2. **Search for "Expo Go"**
+3. **Tap "Get"** to download and install
+4. **Open Expo Go** after installation
+5. You're ready to scan QR codes!
+
+**Direct Link**: [Download Expo Go for iOS](https://apps.apple.com/app/expo-go/id982107779)
+
+**Requirements**:
+- iOS 13.0 or later
+- Compatible with iPhone, iPad, and iPod touch
+
+#### **📱 For Android**
+
+1. **Open Google Play Store** on your Android device
+2. **Search for "Expo Go"**
+3. **Tap "Install"** to download and install
+4. **Open Expo Go** after installation
+5. You're ready to scan QR codes!
+
+**Direct Link**: [Download Expo Go for Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
+
+**Requirements**:
+- Android 5.0 (Lollipop) or later
+
+---
+
+### **Step 3: Verify Expo CLI**
+
+Expo CLI comes bundled with the project dependencies. You don't need to install it globally, but you can verify it works:
+
+```bash
+# This will be installed when you run npm install
+npx expo --version
+```
+
+**Optional**: Install Expo CLI globally for convenience:
+```bash
+npm install -g expo-cli
+```
+
+---
+
+## �🚀 Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
